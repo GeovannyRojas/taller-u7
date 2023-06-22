@@ -1,0 +1,362 @@
+:root {
+    --clr-black: #1c1c1c;
+    --clr-gray: #ececec;
+    --clr-white: #f7f7f7;
+
+    --type-normal: #A8A878;
+    --type-fire: #F08030;
+    --type-water: #6890F0;
+    --type-grass: #78C850;
+    --type-electric: #F8D030;
+    --type-ice: #98D8D8;
+    --type-fighting: #C03028;
+    --type-poison: #A040A0;
+    --type-ground: #E0C068;
+    --type-flying: #A890F0;
+    --type-psychic: #F85888;
+    --type-bug: #A8B820;
+    --type-rock: #B8A038;
+    --type-ghost: #705898;
+    --type-dark: #705848;
+    --type-dragon: #7038F8;
+    --type-steel: #B8B8D0;
+    --type-fairy: #F0B6BC;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #000000;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 70px;
+    display: flex;
+}
+.left-content,.right-content{
+    flex-basis: 50%;
+}
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap:3rem;
+}
+.card{
+    width: 300px;
+    background-color: #8404ce;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgb(253, 254, 254);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.right-content{
+  width: 50%;
+  text-align:center;
+  color: white;
+  position: fixed; 
+  top: 70px;
+  right: 10px; 
+}
+.right-content img{
+  margin: 0.5rem;
+  height: 180px;
+}
+.right-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.abilities{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.abilities .group{
+    background-color: #8404ce;
+    color: white;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+}
+.base-stat{
+    margin-top: 0.5rem;
+}
+.btn-group{
+    display: flex;
+}
+.btn-group button{
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgb(115, 2, 190);
+}
+.Login{
+    font-weight: bold;
+    color: #000000;
+    align-items: center;
+    background-color: aliceblue;
+    height: 500px;
+    width: 500px;
+    padding: 10%;
+}
+
+
+
+.contenedor-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.central-login {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo-login {
+    font-size: 250%;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.imagent {
+    width: 250px;
+}
+
+.id-login {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: #8404ce;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+.id-login  input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #1b262c;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.id-login  input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #E4E4E4;
+}
+
+.id-login  button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:white;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #000000;
+    box-shadow: 0 5px 5px rgb(253, 254, 254);
+    
+    margin-top: 10px;
+}
+
+.id-login  button:hover {
+    background-color: #0f4c75;
+    color:#bbe1fa;
+}
+
+.normal {
+    background-color: var(--type-normal);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.fire {
+    background-color: var(--type-fire);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.water {
+    background-color: var(--type-water);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.grass {
+    background-color: var(--type-grass);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.electric {
+    background-color: var(--type-electric);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.ice {
+    background-color: var(--type-ice);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.fighting {
+    background-color: var(--type-fighting);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.poison {
+    background-color: var(--type-poison);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.ground {
+    background-color: var(--type-ground);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.flying {
+    background-color: var(--type-flying);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    
+}
+
+.psychic {
+    background-color: var(--type-psychic);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.bug {
+    background-color: var(--type-bug);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.rock {
+    background-color: var(--type-rock);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.ghost {
+    background-color: var(--type-ghost);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.dark {
+    background-color: var(--type-dark);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.dragon {
+    background-color: var(--type-dragon);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.steel {
+    background-color: var(--type-steel);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.fairy {
+    background-color: var(--type-fairy);
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
